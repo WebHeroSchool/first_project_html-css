@@ -11,6 +11,7 @@ body {
   /* border: dashed 1px red; */
 }
 .header{
+  /* padding: 40px 0;  для тренировки первого варианта лого, эта строка переходит сюда из .logo*/
   display: flex;
   justify-content: space-between;
 }
@@ -22,8 +23,40 @@ body {
   }
 
 .logo {
+  position: relative;
   padding: 40px 0;
+  padding-left: 44px;
+  /* font-family: pt_serif, arial,helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;  -  код до рефакторинга, оставила для наглядности*/
+  font: bold 24px/31px pt_serif, arial,helvetica, sans-serif;
+  /* width: 190px;
+  height: 35px;
+  background: url('img/logo.svg');  для тренировки первого варианта лого с картинкой. Удаляется строка font:bold...*/
 }
+
+ .logo__circle{
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 28px;
+   height: 28px;
+   border-radius: 50%;
+   opacity: .7;
+   /* border: dashed 1px red; */
+ }
+
+ .logo__circle_color_blue{
+   left: 8px;
+   top: 58%;
+   background: #C8DBFB;
+ }
+
+ .logo__circle_color_dark-blue{
+   background: #0056EC;
+ }
 .menu {
   display: flex;
   align-items: center;
