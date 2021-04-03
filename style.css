@@ -1,12 +1,12 @@
 body {
-  margin: 0;
-
+  margin: 2px 7px 0 -7px;
  }
+
 .wrapper {
   margin: auto;
   width: 80%;
-
 }
+
 .header{
   display: flex;
   justify-content: space-between;
@@ -33,7 +33,6 @@ body {
    height: 28px;
    border-radius: 50%;
    opacity: .7;
-
  }
 
  .logo__circle_color_blue{
@@ -66,7 +65,7 @@ body {
   content: '';
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background: #0056EC;
 }
 
@@ -102,7 +101,7 @@ body {
 
 .main{
   padding: 80px 63% 197px 0;
-  background: 89% no-repeat url(img/frame.svg);
+  background: 89.5% no-repeat url(img/frame.svg);
   background-size: 47.5%;
 }
 
@@ -113,6 +112,7 @@ body {
 
 .main__title-highlight{
   background: #ECF3FF;
+  background: linear-gradient(180deg,rgba(255,255,255,1) 15%, #ECF3FF 15%)
 }
 
 .main__subtitle{
@@ -125,7 +125,7 @@ body {
   /* width: 240px;
   height: 30px; */
   display: inline-block;
-  padding: 18px 34px 18px 24px;
+  padding: 18px 35px 18px 25px;
   background: #0056EC;
   color: #FFFFFF;
   text-decoration: none;
@@ -137,4 +137,22 @@ body {
 
 .main__button:hover{
   opacity: .5;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  padding: 129px 0 40px 0;
+}
+
+.footer__circle{
+  margin-right: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #C8DBFB;
+}
+
+.footer__circle:last-child{
+  margin-right: 5.5%;
 }
