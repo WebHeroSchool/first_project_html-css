@@ -47,13 +47,13 @@ body {
  }
 
 .menu {
-    display: flex;
+  display: flex;
   align-items: center;
   font: bold 18px/21px robotoregular, arial, helvetica, sans-serif;
 }
 
 .menu__item {
-    position: relative;
+  position: relative;
   margin-right: 27px;
   text-decoration: none;
   color: #000;
@@ -72,11 +72,11 @@ body {
 .menu__item::after {
     position: absolute;
   display: block;
-    content: '';
+  content: '';
     left: 0;
-    width: 0;
+  width: 0;
   height: 3px;
-    background: #0056ec;
+  background: #0056ec;
   opacity: 0;
   transition: opacity 0.5s, width 0.5s;
 }
@@ -84,7 +84,7 @@ body {
 .menu__item:hover::after,
 .menu__item_active::after {
   opacity: 1;
-    width: 100%;
+  width: 100%;
 }
 
 .menu__item:last-child {
@@ -121,12 +121,12 @@ body {
     position: absolute;
   display: inline-block;
   padding: 18px 34px 18px 25px;
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
   border-radius: 4px;
   border: 0;
   font: normal 18px/21px robotoregular, arial, helvetica, sans-serif;
-    transition: 0.5s;
+  transition: 0.5s;
 }
 
 .main__button:hover {
@@ -141,7 +141,7 @@ body {
 
 .footer__circle {
   margin-right: 4px;
-    width: 8px;
+  width: 8px;
   height: 8px;
     border-radius: 50%;
   background: #c8dbfb;
