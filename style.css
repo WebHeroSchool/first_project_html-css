@@ -7,13 +7,14 @@ body {
   width: 79.5%;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 125px;
 }
 
-.logo, .menu {
+.logo,
+.menu {
   display: inline;
 }
 
@@ -24,7 +25,7 @@ body {
   padding-left: 44px;
 }
 
- .logo__circle{
+ .logo__circle {
    position: absolute;
    left: 0;
    top: 50%;
@@ -35,41 +36,40 @@ body {
    opacity: .7;
  }
 
- .logo__circle_color_blue{
+ .logo__circle_color_blue {
    left: 8px;
    top: 58%;
    background: #C8DBFB;
  }
 
- .logo__circle_color_dark-blue{
-   background: #0056EC;
+ .logo__circle_color_dark-blue {
+   background: #0056ec;
  }
 
 .menu {
   font: bold 18px/21px robotoregular, arial, helvetica, sans-serif;
   display: flex;
   align-items: center;
-  /* margin-right: 70px; */
 }
 
 .menu__item {
   position: relative;
   margin-right: 27px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
 
-.menu__item_active::after{
+.menu__item_active::after {
   position: absolute;
   display: block;
   content: '';
   left: 0;
   width: 100%;
   height: 4px;
-  background: #0056EC;
+  background: #0056ec;
 }
 
-.menu__item::after{
+.menu__item::after {
   position: absolute;
   display: block;
   content: '';
@@ -81,49 +81,43 @@ body {
   transition: opacity .5s, width .5s;
 }
 
-.menu__item:hover{
-  opacity: .5;
-}
-
-.menu__item:hover::after, .menu__item_active::after{
+.menu__item:hover::after, .menu__item_active::after {
   opacity: 1;
   width: 100%;
 }
 
-.menu__item:last-child{
+.menu__item:last-child {
   margin-right: 3px;
 }
 
-.menu__item:hover{
+.menu__item:hover {
   opacity: .5;
   transition: .5s;
 }
 
-.main{
+.main {
   padding: 80px 63% 197px 0;
   background: 100% no-repeat url(img/frame.svg);
   background-size: 50.5%;
 }
 
-.main__title{
+.main__title {
   margin: 0 0 35px 0;
   font: bold 66px/88px pt_serifbold, arial, helvetica, sans-serif;
 }
 
-.main__title-highlight{
-  background: #ECF3FF;
-  background: linear-gradient(180deg,rgba(255,255,255,1) 15%, #ECF3FF 15%)
+.main__title-highlight {
+  background: #ecf3ff;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 15%, #ecf3ff 15%)
 }
 
-.main__subtitle{
+.main__subtitle {
   margin: 0 135px 40px 0;
   font: bold 22px/26px robotoregular, arial, helvetica, sans-serif;
 }
 
-.main__button{
+.main__button {
   position: absolute;
-  /* width: 240px;
-  height: 30px; */
   display: inline-block;
   padding: 18px 34px 18px 25px;
   background: #0056EC;
@@ -135,24 +129,20 @@ body {
   transition: .5s;
 }
 
-.main__button:hover{
+.main__button:hover {
   opacity: .5;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: center;
   padding: 129px 0 40px 0;
 }
 
-.footer__circle{
+.footer__circle {
   margin-right: 4px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #C8DBFB;
 }
-/*
-.footer__circle:last-child{
-  margin-right: 5.5%;
-} */
