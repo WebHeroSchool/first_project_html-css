@@ -1,27 +1,27 @@
 body {
-   margin: 0;
+     margin: 0;
  }
 
 .wrapper {
    margin: auto;
-   width: 79.5%;
+     width: 79.5%;
 }
 
 .header {
    display: flex;
-   justify-content: space-between;
-   margin-bottom: 125px;
+     justify-content: space-between;
+     margin-bottom: 125px;
 }
 
 .logo,
 .menu {
-   display: inline;
+     display: inline;
 }
 
 .logo {
-   font: bold 24px/31px pt_serifbold, arial, helvetica, sans-serif;
-   position: relative;
-   padding: 40px 0;
+     font: bold 24px/31px pt_serifbold, arial, helvetica, sans-serif;
+     position: relative;
+     padding: 40px 0;
    padding-left: 44px;
 }
 
@@ -43,18 +43,18 @@ body {
  }
 
  .logo__circle_color_dark-blue {
-   background: #0056ec;
+     background: #0056ec;
  }
 
 .menu {
-   font: bold 18px/21px robotoregular, arial, helvetica, sans-serif;
    display: flex;
-   align-items: center;
+     align-items: center;
+     font: bold 18px/21px robotoregular, arial, helvetica, sans-serif;
 }
 
 .menu__item {
    position: relative;
-   margin-right: 27px;
+     margin-right: 27px;
    text-decoration: none;
    color: #000;
 }
@@ -62,9 +62,9 @@ body {
 .menu__item_active::after {
    position: absolute;
    display: block;
-   content: '';
+     content: '';
    left: 0;
-   width: 100%;
+     width: 100%;
    height: 4px;
    background: #0056ec;
 }
@@ -74,36 +74,36 @@ body {
    display: block;
    content: '';
    left: 0;
-   width: 0;
-   height: 3px;
+     width: 0;
+     height: 3px;
    background: #0056ec;
-   opacity: 0;
-   transition: opacity 0.5s, width 0.5s;
+     opacity: 0;
+     transition: opacity 0.5s, width 0.5s;
 }
 
 .menu__item:hover::after,
 .menu__item_active::after {
-   opacity: 1;
+     opacity: 1;
    width: 100%;
 }
 
 .menu__item:last-child {
-   margin-right: 3px;
+     margin-right: 3px;
 }
 
 .menu__item:hover {
-   opacity: 0.5;
-   transition: 0.5s;
+     opacity: 0.5;
+     transition: 0.5s;
 }
 
 .main {
-   padding: 80px 63% 197px 0;
+     padding: 80px 63% 197px 0;
    background: 100% no-repeat url(img/frame.svg);
-   background-size: 50.5%;
+     background-size: 50.5%;
 }
 
 .main__title {
-   margin: 0 0 35px 0;
+     margin: 0 0 35px 0;
    font: bold 66px/88px pt_serifbold, arial, helvetica, sans-serif;
 }
 
